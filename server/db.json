@@ -1,0 +1,123 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "restaurantname": "7 sopas",
+      "price": "2",
+      "producttype": "input",
+      "productname": "Pack Special",
+      "favorite": true,
+      "image": "https://www.diariamenteali.com/medias/receta-de-papas-sancochadas-con-aroma-de-pachamanca-1900Wx500H?context=bWFzdGVyfGltYWdlc3wyMjEwMTd8aW1hZ2UvanBlZ3xoOTYvaGZhLzkwNzQxMzAxNTc1OTgvcmVjZXRhLWRlLXBhcGFzLXNhbmNvY2hhZGFzLWNvbi1hcm9tYS1kZS1wYWNoYW1hbmNhXzE5MDBXeDUwMEh8NTM3MTJiMzI2YmQ2OTAyY2UzOGNkNDFlNTIxZTg4ZmRmZWVhMDE5OWM2YmI0Y2I1NmE4ZDNmYmRkZTg2Yzc1Nw"
+    },
+    {
+      "id": 1,
+      "restaurantname": "Juanito's",
+      "price": 10,
+      "producttype": "Dinner Plate",
+      "productname": "Pack northest",
+      "favorite": false,
+      "image": "https://comidasperuanas.net/wp-content/uploads/2015/07/Arroz-con-pollo-peruano.jpg"
+    },
+    {
+      "id": 2,
+      "restaurantname": "Rocky'k",
+      "price": 7,
+      "producttype": "input",
+      "productname": "Pack Chicken",
+      "favorite": false,
+      "image": "https://elcomercio.pe/resizer/ii0EiWdpMP9_DsJzJ3whAirXg3U=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/WKLKU6YQTJEZJLSWM3CUZZ37AA.jpg"
+    },
+    {
+      "id": 3,
+      "restaurantname": "Cevichando",
+      "price": 7,
+      "producttype": "Dinner Plate",
+      "productname": "Pack of sea food",
+      "favorite": false,
+      "image": "https://recetascocinaperuana.com/wp-content/uploads/2020/08/arroz-con-mariscos.jpg"
+    }
+  ],
+  "promotions": [
+    {
+      "id": 0,
+      "title": "End of the month offer!",
+      "subtitle": "At PakosRest we offer you a 60% discount for the purchase of a plate of food and an input.",
+      "content": "The offer is only valid between September 10 to September 30, 2022. The offer is only granted to people who purchase a plate of food and at least one input in the same purchase.If you do not comply with any of the above points, the discount will not be applied.",
+      "image": "https://larepublica.pe/resizer/W3rBQsk0lyJn04QcRk2gW4_sBuM=/500x272/top/larepublica.pe/resizer/pCBq-Yq_HrMf5efkbeOEtA87CxM=/500x272/top/smart/larepublica.pe/resizer/ir4I0Zzr9or4-f2um9IrvGHuQDc=/500x272/top/smart/arc-anglerfish-arc2-prod-gruporepublica.s3.amazonaws.com/public/SWC3OMMD3FHN3KZZJYXFV6Q3IE.png"
+    },
+    {
+      "id": 1,
+      "title": "Norky's has just published several supplies",
+      "subtitle": "Norky's Restaurant published 4 new supplies.",
+      "content": "The supplies are: - 1/8 grilled chicken - salad with vinaigrette - Hoop rice - 1 pork chop",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "title": "Juanito's just posted a plate of food",
+      "subtitle": "Juanito's published the dish: Steak a lo poor. Get it before it runs out.",
+      "content": "",
+      "image": ""
+    },
+    {
+      "title": "2x1 in all dishes of our published dishes",
+      "subtitle": "Enjoy now",
+      "content": "Only for today, you have buy: \n- Chicken with fries potatoes\n- Broaster chicken \n- Oriental rice",
+      "image": "https://cuponassets.cuponatic-latam.com/backendPe/uploads/imagenes_descuentos/71732/9d42e13acb612ac1b33bdee57560d789ba6cef7d.XL2.jpg",
+      "id": 5
+    }
+  ],
+  "posts": [
+    {
+      "restaurantname": "Cevichando",
+      "producttype": "Dinner Plate",
+      "productname": "Pizza",
+      "description": "Pizza",
+      "deliverymethod": "Face-to-face",
+      "price": "20",
+      "favourite": false,
+      "image": "https://elcomercio.pe/resizer/ii0EiWdpMP9_DsJzJ3whAirXg3U=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/WKLKU6YQTJEZJLSWM3CUZZ37AA.jpg",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "restaurantname": "Cevichando",
+      "producttype": "Dinner Plate",
+      "productname": "Rice with chicken",
+      "description": "Consists of cooked rice and its chicken prey is placed on top.",
+      "deliverymethod": "Delivery",
+      "favorite": false,
+      "price": 10,
+      "image": "https://comidasperuanas.net/wp-content/uploads/2015/07/Arroz-con-pollo-peruano.jpg"
+    }
+  ],
+  "orders": [
+    {
+      "id": 0,
+      "product": "Rice with Chicken",
+      "status": "Preparing",
+      "restaurant": "Peruvianitos",
+      "productType": "Dinner",
+      "deliveryMethod": "Delivery",
+      "paymentMethod": "credit card"
+    },
+    {
+      "id": 1,
+      "product": "Special",
+      "status": "Sending",
+      "restaurant": "AmaZ",
+      "productType": "Made from inputs",
+      "deliveryMethod": "to pick up",
+      "paymentMethod": "cash"
+    },
+    {
+      "id": 2,
+      "product": "Rice with Chicken",
+      "status": "Delivered",
+      "restaurant": "Cevichando",
+      "productType": "Dinner",
+      "deliveryMethod": "Delivery",
+      "paymentMethod": "wire transfer"
+    }
+  ]
+}
