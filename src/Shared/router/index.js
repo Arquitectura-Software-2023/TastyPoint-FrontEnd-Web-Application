@@ -73,11 +73,11 @@ const router = createRouter({
           component: () => import("../../Social/pages/profile-food-store-settings.component.vue")
         },
         {
-          path: '/business/Publishing',
+          path: '/business/promotions',
           component: () => import("../../Publishing/pages/promotions-business.component.vue")
         },
         {
-          path: '/business/Ordering',
+          path: '/business/orders',
           component: ()=> import("../../Ordering/pages/business-orders.component.vue")
         },
         {
