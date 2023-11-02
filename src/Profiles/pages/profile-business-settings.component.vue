@@ -1,184 +1,201 @@
 <template>
   <div class="settings">
     <h1>Settings</h1>
+    <div class="profile-settings">
+      <h2>Profile</h2>
+      <div class="input-group">
+        <label for="business-name">Business Name</label>
+        <input type="text" id="business-name" />
+      </div>
+      <div class="input-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" />
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+      </div>
+      <div class="input-group">
+        <label for="contact-number">Contact Number</label>
+        <input type="tel" id="contact-number" />
+      </div>
+    </div>
 
-    <pv-scrollpanel style="width:99%; height: 82vh" class="custom">
-      <div class="perfil">
-        <h2>Profile</h2>
-        <div class="grupo1">
-          <label for="">Bussines name</label>
-          <input type="text" name="" id="name"><span class="barra"></span>
+    <div class="social-media-settings">
+      <h2>Social Media</h2>
+      <div class="input-group">
+        <label for="facebook-account">Facebook</label>
+        <input type="text" id="facebook-account" />
+      </div>
+      <div class="input-group">
+        <label for="instagram-account">Instagram</label>
+        <input type="text" id="instagram-account" />
+      </div>
+      <div class="input-group">
+        <label for="twitter-account">Twitter</label>
+        <input type="text" id="twitter-account" />
+      </div>
+    </div>
+
+    <div class="plan-settings">
+      <h2>Update Plan</h2>
+      <div class="plan-option">
+        <div class="plan-details free-plan">
+          <h3>Free</h3>
+          <i class="pi pi-dollar"></i>0
+          <p>We offer you:</p>
+          <ul>
+            <li>Advertising through your profile</li>
+            <li>Publication of up to 10 food dishes</li>
+            <li>Publication of up to 20 individual supplies</li>
+            <li>Visualization of your product catalog</li>
+          </ul>
         </div>
-        <div class="grupo1">
-          <label for="">Email</label>
-          <input type="email" name="" id="email"><span class="barra"></span>
-        </div>
-        <div class="grupo1">
-          <label for="">Password</label>
-          <input type="password" name="" id="password"><span class="barra"></span>
-        </div>
-        <div class="grupo1">
-          <label for="">Contact number</label>
-          <input type="tel" name="" id="phone-number"><span class="barra"></span>
+        <div class="plan-details premium-plan">
+          <h3>Premium</h3>
+          <i class="pi pi-dollar"></i>10
+          <p>We offer you:</p>
+          <ul>
+            <li>Everything in the Free plan</li>
+            <li>Unlimited food plate postings</li>
+            <li>Unlimited publication of individual supplies</li>
+            <li>Access to delivery using the application</li>
+            <li>Consumer visibility</li>
+            <li>Consumer feedback</li>
+          </ul>
+          <button class="acquire-button">Acquire</button>
         </div>
       </div>
+    </div>
 
-      <div class="accounts">
-        <h2>Social media</h2>
-        <div class="grupo2">
-          <label for="">Facebook</label>
-          <input type="text" name="" id="facebook-account"><span class="barra"></span>
-        </div>
-        <div class="grupo2">
-          <label for="">Instagram</label>
-          <input type="text" name="" id="instagram-account"><span class="barra"></span>
-        </div>
-        <div class="grupo2">
-          <label for="">Twitter</label>
-          <input type="text" name="" id="twitter-account"><span class="barra"></span>
-        </div>
-      </div>
-
-      <div class="plan">
-        <h2>Update plan</h2>
-        <Panel class="pv-panel-free">
-          <h3>Free<br><i class=" pi pi-dollar"></i>0</h3>
-          <p> We offer you: </p>
-          <li>Advertising through the profile</li>
-          <li>Publication of up to 10 food dishes</li>
-          <li>Publication of up to 20 individual supplies</li>
-          <li>Visualization of the catalog of your products</li>
-        </Panel>
-        <Panel class="pv-panel-premium">
-          <h3>Premium<br><i class=" pi pi-dollar"></i>10</h3>
-          <p> We offer you: </p>
-          <li>Everything obtained in the Free plan</li>
-          <li>Unlimited food plate posting</li>
-          <li>Unlimited publication of individual supplies</li>
-          <li>Access to delivery use of the application</li>
-          <li>Consumer visualization</li>
-          <li>Consumer's point of view</li>
-          <button type="button" class="btnPlanPrem">Acquire</button>
-        </Panel>
-      </div>
-
-      <div class="saveChanges">
-        <button type="button" class="btnCancel">Cancel</button>
-        <button type="submit" class="btnSave">Save changes</button>
-      </div>
-
-    </pv-scrollpanel>
-
+    <div class="save-changes">
+      <button class="cancel-button">Cancel</button>
+      <button class="save-button">Save Changes</button>
+    </div>
   </div>
-
 </template>
 
-<script>
-
-export default {
-
-}
-</script>
-
 <style scoped>
-
 .settings {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin-left: 4%;
-  margin-top: 2%;
-  margin-right: 2%;
-}
-.custom{
-  background-color: #FDFBEF;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  background-color: #f5f5f5;
   border-radius: 10px;
-
-}
-h2{
+  padding: 20px;
   color: #3F1602;
-
-}
-.perfil, .accounts, .plan, .saveChanges{
-  text-align: left;
-  margin-left: 4%;
-  margin-top: 4%
 }
 
-label{
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h2 {
   font-size: 20px;
-  margin-right:3%;
-  color: #3F1602;
+  margin-top: 20px;
+  color: #3f1602;
 }
-.plan{
+
+.input-group {
   display: flex;
-  flex-direction: row;
-  align-content: space-between;
+  flex-direction: column;
+  margin: 10px 0;
 }
 
-panel{
-  background: #E94152;
-  border-radius: 50px;
-  color: #3F1602;
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  margin: 5%;
+  width: 100%;
+}
 
+.plan-option {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
-.pv-panel-premium{
-  background: #F9731C;
-}
-li{
-  text-align: justify;
-  margin: 5%;
-}
-h3{
-  font-size: 32px;
-}
-.btnPlanPrem{
-  width: 162px;
-  height: 37px;
-  background: #3F1602;
-  border-radius: 10px;
-  outline:none;
-  border: hidden;
-  text-align: center;
-  font-size: 20px;
-  color: #FDFBEF;
-  cursor: pointer;
-  margin-bottom: 5%;
-}
-.saveChanges{
-  flex-direction: row;
-  align-content: space-between;
-  text-align: right;
 
-}
-.btnCancel{
-  width: 227px;
-  height: 59px;
-  background: #E94152;
+.plan-details {
+  padding: 20px;
   border-radius: 10px;
-  outline:none;
-  border: hidden;
+  flex: 1;
   text-align: center;
-  font-size: 20px;
-  color: #FDFBEF;
-  cursor: pointer;
-  margin-right: 5%;
+  margin: 10px;
 }
-.btnSave{
-  width: 227px;
-  height: 59px;
-  background: #F9731C;
-  border-radius: 10px;
-  outline:none;
-  border: hidden;
-  text-align: center;
+
+.plan-details h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.pi {
   font-size: 20px;
-  color: #FDFBEF;
+  margin-right: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+  text-align: left;
+}
+
+.acquire-button {
+  background-color: #31135E;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
-  margin-right: 5%;
+}
+
+.save-changes {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.cancel-button {
+  background-color: #D9D9D9;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.save-button {
+  background-color: #31135E;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.free-plan {
+  background-color: #009D9A; /* Color para Free */
+}
+
+.premium-plan {
+  background-color: #4589FF; /* Color para Premium */
 }
 </style>

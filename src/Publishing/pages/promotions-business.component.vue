@@ -8,7 +8,7 @@
         <pv-card v-if="!adding" class="promotionCard">
           <template #content>
             <pv-button style="background-color: transparent" @click="adding= true;">
-              <h1 style="color: rgba(233, 65, 82, 1); font-family: Montserrat, sans-serif;">+ Add Promotion</h1>
+              <h1 style="color: #31135E; font-family: Montserrat, sans-serif;">+ Add Promotion</h1>
             </pv-button>
           </template>
         </pv-card>

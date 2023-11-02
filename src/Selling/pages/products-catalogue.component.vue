@@ -104,7 +104,8 @@ h2{
   justify-self: start;
 }
 .consumer-view{
-  background: #F9731C;
+  background: #FDFBEF;
+  color: #31135E;
   margin-right:20px;
   font-family: 'Montserrat';
 }
@@ -116,7 +117,8 @@ h2{
 
 }
 .post-new{
-  background: #3F1602;
+  color: #FDFBEF;
+  background: #31135E;
   margin-left: 20px;
   font-family: 'Montserrat';
 }
