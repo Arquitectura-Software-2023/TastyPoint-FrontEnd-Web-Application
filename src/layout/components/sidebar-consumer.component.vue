@@ -129,7 +129,7 @@ export default {
   width: 17vw;
   height: 94vh;
   border-radius: 10px;
-  background-color: rgba(233, 65, 82, 1);
+  background-color: #009D9A;
 }
 
 .menu-items{

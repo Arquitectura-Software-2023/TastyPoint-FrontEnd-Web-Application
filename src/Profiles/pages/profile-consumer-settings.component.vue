@@ -101,7 +101,7 @@
     width: 227px;
     height: 59px;
     top: 2%;
-    background: #3F1602;
+    background: #31135E;
     border-radius: 10px;
     outline:none;
     border: hidden;
@@ -110,7 +110,7 @@
     cursor: pointer;
   }
   .btn:hover{
-    background-color: #3F1602;
+    background-color: #31135E;
   }
 
 </style>

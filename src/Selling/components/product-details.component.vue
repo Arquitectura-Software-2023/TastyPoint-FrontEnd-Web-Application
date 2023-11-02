@@ -91,15 +91,46 @@
 </template>
 
 <script>
+import {ProductsApiService} from "../services/products-api.service"
 export default {
   name: "DetailsDish",
-  data(){
+  data() {
     return {
-      id: Number
-    }
+      search: "",
+      products: [],
+      productsService: null,
+      product: {},
+      textS: "",
+    };
   },
   created() {
-    this.id = this.$route.params.id
+    try {
+      this.productsService = new ProductsApiService();
+      this.productsService.getAll().then((response) => {
+        this.products = response.data;
+        console.log(this.products);
+      });
+    } catch (e) {
+      console.error(e);
+    }
+  },
+  computed: {
+    filteredProducts() {
+      return this.products.filter((product => (product.productname.includes(this.search) || product.restaurantname.includes(this.search))))
+
+    }
+  },
+  methods: {
+    updateFavorite(product) {
+      this.productsService.patch(product.id, {"favorite": !product.favorite});
+      product.favorite = !product.favorite;
+    },
+    putSearch() {
+      this.textS = "Search Results";
+    },
+    unputSearch() {
+      this.textS = "Close to your area";
+    }
   }
 }
 </script>
@@ -137,25 +168,26 @@ export default {
   width: 38vw;
   font-size: 30px;
   border-radius: 20px;
-  background-color: #f7721c;
-  color: #3f1602;
+  background-color: #31135E;
+  color: white;
 }
 .descrip{
   width: 38vw;
   height: 35vh;
   border-radius: 20px;
   margin: 1vw;
-  background-color: #e74051;
+  background-color: #009D9A;
 }
 
 .card-order{
   width: 35vw;
-  border-radius: 20px;
-  background-color: #e74051;
+  border-radius: 40px;
+  background-color: #009D9A;
   height: 80vh;
 }
 .tarjeta{
-
+  padding: 4%;
+  border-radius: 20px;
 }
 .p-inputnumber{
   height: 18px;

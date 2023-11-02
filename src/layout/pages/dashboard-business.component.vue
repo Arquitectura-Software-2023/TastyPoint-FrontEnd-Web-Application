@@ -25,7 +25,7 @@ export default {
   width: 79vw;
   height: 94vh;
   text-align: center;
-  background-color: rgba(233, 65, 82, 1);
+  background-color: #009D9A;
   border-radius:10px;
   margin: 5px 18vw;
 }

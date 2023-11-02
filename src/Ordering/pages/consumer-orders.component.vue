@@ -134,7 +134,7 @@ export default{
   transform: translate(-90%, 0%) scale(1);
 }
 .btn-edit-order{
-  background: #E94152;
+  background: #31135E;
   transform: translate(-65%, 0%) scale(1);
 }
 .label-details{
