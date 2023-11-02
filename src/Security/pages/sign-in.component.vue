@@ -14,7 +14,7 @@
               </router-link>
             </div>
             <div class="inputs">
-              <h4>Email</h4>
+              <h4 class="text">Email</h4>
               <pv-inputtext id="Email"
                             v-model="v$.Email.$model"
                             :class="{'p-invalid':v$.Email.$invalid && submitted}"
@@ -32,7 +32,7 @@
             </div>
             <div class="inputs">
               <div style="display: flex; justify-content: space-between">
-                <h4>Password</h4><router-link to="/forgotpassword" class="fyp" >Forgot your password?</router-link>
+                <h4 class="text">Password</h4><router-link to="/forgotpassword" class="fyp" >Forgot your password?</router-link>
               </div>
               <pv-password id="password"
                             v-model="v$.password.$model"
@@ -108,11 +108,12 @@ export default{
       width: 90vw;
       height: 90vh;
       text-align: center;
+      background-color: #009D9A;
     }
     .brand{
       justify-self: center;
       align-self: center;
-      color: rgba(63, 22, 2, 1);
+      color: #3F1602;
       font-size: 30px;
       font-weight: bold;
     }
@@ -123,8 +124,11 @@ export default{
     .cardForm{
       width: 30vw;
       height: fit-content;
-      background-color: rgba(249, 115, 28, 1);
+      background-color: #2F2F2F;
       border-radius: 20px;
+    }
+    .text{
+      color: white;
     }
     .btnsChanged{
       display: flex;
@@ -138,26 +142,26 @@ export default{
       gap: 10px;
     }
     .btnactive{
-      background-color: rgba(249, 115, 28, 1);
+      background-color: #4589FF;
       width: 100%;
-      color: rgba(63, 22, 2, 1);
+      color: #4589FF;
       font-family: Montserrat, sans-serif;
     }
     .btn-Register{
       width: 100%;
     }
     .btninactive{
-      background-color: white;
-      color: rgba(63, 22, 2, 1);
+      background-color: #4589FF;
+      color: #4589FF;
       font-family: Montserrat, sans-serif;
     }
     .btnactive:enabled{
-      background-color: rgba(249, 115, 28, 1);
-      color: rgba(63, 22, 2, 1);
+      background-color: #4589FF;
+      color: white;
     }
     .btninactive:enabled{
       background-color: white;
-      color: rgba(63, 22, 2, 1);
+      color: #000000;
     }
     .inputs{
       text-align: start;
@@ -174,7 +178,7 @@ export default{
       border-radius: 12px;
     }
     .fyp{
-      color: rgba(65, 65, 65, 1);
+      color: whitesmoke;
     }
     .fyp:hover{
       background-color: transparent;
@@ -182,11 +186,11 @@ export default{
     .btnLog-in{
       width: 26vw;
       border-radius: 10px;
-      background-color: rgba(63, 22, 2, 1);
+      background-color: #4589FF;
       color: white;
     }
     .btnLog-in:enabled{
-      background-color: rgba(63, 22, 2, 1);
+      background-color: #4589FF;
     }
     .btnLog-in:hover{
       cursor: pointer;

@@ -76,6 +76,7 @@ export default{
   width: 90vw;
   height: 90vh;
   text-align: center;
+  background-color: #009D9A;
 }
 .brand{
   justify-self: center;
@@ -91,7 +92,7 @@ export default{
 .cardForm{
   width: 30vw;
   height: fit-content;
-  background-color: rgba(249, 115, 28, 1);
+  background-color: #FDFBEF;
   border-radius: 20px;
 }
 .inputs{
@@ -112,11 +113,11 @@ export default{
 .btnSegmento{
   width: 100%;
   border-radius: 10px;
-  background-color: rgba(63, 22, 2, 1);
+  background-color: #31135E;
   color: white;
 }
 .btnSegmento:enabled{
-  background-color: rgba(63, 22, 2, 1);
+  background-color: #31135E;
 }
 .btnSegmento:hover{
   cursor: pointer;

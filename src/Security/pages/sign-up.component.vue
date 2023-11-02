@@ -14,7 +14,7 @@
             <pv-button class="btnactive" label="Register"></pv-button>
           </div>
           <div class="inputs">
-            <h4>Username</h4>
+            <h4 class="text">Username</h4>
             <pv-inputtext id="username" 
                           v-model="v$.username.$model" 
                           type="text" placeholder="Enter username" 
@@ -25,7 +25,7 @@
                    class="p-error">{{v$.username.required.$message.replace('Value', 'Name')}}</small>
           </div>
           <div class="inputs">
-            <h4>Email</h4>
+            <h4 class="text">Email</h4>
             <pv-inputtext id="Email"
                           v-model="v$.Email.$model"
                           :class="{'p-invalid':v$.Email.$invalid && submitted}"
@@ -42,7 +42,7 @@
                    class="p-error">{{v$.Email.required.$message.replace('Value', 'Email')}}</small>
           </div>
           <div class="inputs">
-            <h4>Password</h4>
+            <h4 class="text">Password</h4>
             <pv-password id="password"
                          v-model="v$.password.$model"
                          :class="{'p-invalid':v$.password.$invalid && submitted}"
@@ -130,6 +130,7 @@ export default{
   height: 90vh;
   width: 90vw;
   text-align: center;
+  background-color: #009D9A;
 }
 .brand{
   justify-self: center;
@@ -145,7 +146,7 @@ export default{
 .cardForm{
   width: 32vw;
   height: fit-content;
-  background-color: rgba(249, 115, 28, 1);
+  background-color: #2F2F2F;
   border-radius: 20px;
 }
 .btnsChanged{
@@ -160,27 +161,30 @@ export default{
   gap: 10px;
 }
 .btnactive{
-  background-color: rgba(249, 115, 28, 1);
+  background-color: #4589FF;
   width: 100%;
-  color: rgba(63, 22, 2, 1);
+  color: #000000;
   font-family: Montserrat, sans-serif;
 }
 .btn-login{
   width: 100%;
 }
+.text{
+      color: white;
+    }
 .btninactive{
   background-color: white;
   width: 100%;
-  color: rgba(63, 22, 2, 1);
+  color: #000000;
   font-family: Montserrat, sans-serif;
 }
 .btnactive:enabled{
-  background-color: rgba(249, 115, 28, 1);
-  color: rgba(63, 22, 2, 1);
+  background-color: #4589FF;
+  color: white;
 }
 .btninactive:enabled{
   background-color: white;
-  color: rgba(63, 22, 2, 1);
+  color: #000000;
 }
 .inputs{
   text-align: start;
@@ -205,11 +209,11 @@ export default{
 .btnRegister{
   width: 28vw;
   border-radius: 10px;
-  background-color: rgba(63, 22, 2, 1);
+  background-color: #4589FF;
   color: white;
 }
 .btnRegister:enabled{
-  background-color: rgba(63, 22, 2, 1);
+  background-color: #4589FF;
 }
 .btnRegister:hover{
   cursor: pointer;
@@ -256,5 +260,6 @@ export default{
 .label-terms{
   justify-self: start;
   align-self: center;
+  color: white;
 }
 </style>
