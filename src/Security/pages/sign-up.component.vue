@@ -1,4 +1,4 @@
-<template>
+<template> 
   <div class="register">
     <div class="brand">
       <h1>Tasty Point</h1>
