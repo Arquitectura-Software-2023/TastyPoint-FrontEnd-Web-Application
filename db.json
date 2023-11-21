@@ -35,6 +35,15 @@
       "productname": "Pack of sea food",
       "favorite": false,
       "image": "https://recetascocinaperuana.com/wp-content/uploads/2020/08/arroz-con-mariscos.jpg"
+    },
+    {
+      "id": 4,
+      "restaurantname": "Braseando",
+      "price": 7,
+      "producttype": "Dinner Plate",
+      "productname": "Pack of chicken",
+      "favorite": false,
+      "image": "https://recetascocinaperuana.com/wp-content/uploads/2020/08/arroz-con-mariscos.jpg"
     }
   ],
   "promotions": [
