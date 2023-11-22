@@ -12,7 +12,7 @@
     {
       "id": 1,
       "restaurantname": "Juanito's",
-      "price": 10,
+      "price": 30,
       "producttype": "Dinner Plate",
       "productname": "Pack northest",
       "favorite": false,
@@ -44,6 +44,15 @@
       "productname": "Pack of chicken",
       "favorite": false,
       "image": "https://recetascocinaperuana.com/wp-content/uploads/2020/08/arroz-con-mariscos.jpg"
+    },
+    {
+      "id": 5,
+      "restaurantname": "Braseando",
+      "price": 15,
+      "producttype": "Dinner Plate",
+      "productname": "Pack of grill",
+      "favorite": false,
+      "image": "https://www.goya.com/media/7571/citrus-grilled-chicken.jpg?quality=80"
     }
   ],
   "promotions": [
@@ -74,6 +83,13 @@
       "content": "Only for today, you have buy: \n- Chicken with fries potatoes\n- Broaster chicken \n- Oriental rice",
       "image": "https://cuponassets.cuponatic-latam.com/backendPe/uploads/imagenes_descuentos/71732/9d42e13acb612ac1b33bdee57560d789ba6cef7d.XL2.jpg",
       "id": 5
+    },
+    {
+      "id": 6,
+      "title": "Grill plates for dinner!",
+      "subtitle": "Only for today: Pack grill is in offer!!! 10% off",
+      "content": "Delicious grill chicken with Inka Kola 1.5 L",
+      "image": "https://tofuu.getjusto.com/orioneat-prod/vsJJZ54ED2fzu8GxQ-Foto_pollo%2Bgas.jpg"
     }
   ],
   "posts": [
@@ -98,6 +114,17 @@
       "favorite": false,
       "price": 10,
       "image": "https://elcomercio.pe/resizer/ii0EiWdpMP9_DsJzJ3whAirXg3U=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/WKLKU6YQTJEZJLSWM3CUZZ37AA.jpg"
+    },
+    {
+      "id": 3,
+      "restaurantname": "Juanito's",
+      "producttype": "Dinner Plate",
+      "productname": "Pack northest",
+      "description": "Pack northest",
+      "deliverymethod": "Delivery",
+      "favorite": false,
+      "price": 30,
+      "image": "https://imgmedia.buenazo.pe/1200x660/buenazo/original/2022/10/24/60d89da6913c240e6725db08.jpg"
     }
   ],
   "orders": [
